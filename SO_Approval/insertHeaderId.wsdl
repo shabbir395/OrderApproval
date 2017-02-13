@@ -1,0 +1,21 @@
+<?binding.jca insertHeaderId_db.jca?>
+<wsdl:definitions name="insertHeaderId" targetNamespace="http://xmlns.oracle.com/pcbpel/adapter/db/Order_Approval/SO_Approval/insertHeaderId" xmlns:tns="http://xmlns.oracle.com/pcbpel/adapter/db/Order_Approval/SO_Approval/insertHeaderId" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:plt="http://schemas.xmlsoap.org/ws/2003/05/partner-link/" xmlns:top="http://xmlns.oracle.com/pcbpel/adapter/db/top/insertHeaderId">
+    <plt:partnerLinkType name="insertHeaderId_plt">
+        <plt:role name="insertHeaderId_role">
+            <plt:portType name="tns:insertHeaderId_ptt"/>
+        </plt:role>
+    </plt:partnerLinkType>
+    <wsdl:types>
+        <schema xmlns="http://www.w3.org/2001/XMLSchema">
+            <import namespace="http://xmlns.oracle.com/pcbpel/adapter/db/top/insertHeaderId" schemaLocation="xsd/insertHeaderId_table.xsd"/>
+        </schema>
+    </wsdl:types>
+    <wsdl:message name="XxHeaderIdCollection_msg">
+        <wsdl:part name="XxHeaderIdCollection" element="top:XxHeaderIdCollection"/>
+    </wsdl:message>
+    <wsdl:portType name="insertHeaderId_ptt">
+        <wsdl:operation name="merge">
+            <wsdl:input message="tns:XxHeaderIdCollection_msg"/>
+        </wsdl:operation>
+    </wsdl:portType>
+</wsdl:definitions>

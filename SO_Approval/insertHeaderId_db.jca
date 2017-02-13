@@ -1,0 +1,15 @@
+<adapter-config name="insertHeaderId" adapter="Database Adapter" wsdlLocation="insertHeaderId.wsdl" xmlns="http://platform.integration.oracle/blocks/adapter/fw/metadata">
+  
+  <connection-factory location="eis/DB/erptest6" UIConnectionName="erptest6" adapterRef=""/>
+  <endpoint-interaction portType="insertHeaderId_ptt" operation="merge">
+    <interaction-spec className="oracle.tip.adapter.db.DBWriteInteractionSpec">
+      <property name="DescriptorName" value="insertHeaderId.XxHeaderId"/>
+      <property name="DmlType" value="merge"/>
+      <property name="MappingsMetaDataURL" value="insertHeaderId-or-mappings.xml"/>
+      <property name="OptimizeMerge" value="true"/>
+      <property name="DetectOmissions" value="true"/>
+      <property name="GetActiveUnitOfWork" value="false"/>
+    </interaction-spec>
+  </endpoint-interaction>
+
+</adapter-config>

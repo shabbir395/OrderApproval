@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<JavaBean xmlns="http://xmlns.oracle.com/adfm/beanmodel" version="11.1.1.64.93"
+          id="OeOrderLinesAll" Package="Approval_UI_mgrApproval"
+          BeanClass="Approval_UI_mgrApproval.OeOrderLinesAll"
+          isJavaBased="false">
+  <Attribute Name="lineId" IsUpdateable="0" Type="java.math.BigDecimal">
+    <Properties>
+      <CustomProperties>
+        <Property Name="nextSiblingNamespace"
+                  Value="http://xmlns.oracle.com/pcbpel/adapter/db/top/getOrderData"/>
+        <Property Name="nextSibling" Value="orgId"/>
+        <Property Name="minOccurs" Value="1"/>
+        <Property Name="maxOccurs" Value="1"/>
+        <Property Name="LABEL" Value="Line Id"/>
+        <Property Name="LeafElement_hint" Value="LeafElement_no_attribute"/>
+        <Property Name="nillable" Value="false"/>
+        <Property Name="originalName" Value="lineId"/>
+        <Property Name="targetNamespace"
+                  Value="http://xmlns.oracle.com/pcbpel/adapter/db/top/getOrderData"/>
+        <Property Name="type" Value="java.math.BigDecimal"/>
+      </CustomProperties>
+    </Properties>
+  </Attribute>
+  <Attribute Name="orgId" IsUpdateable="0" Type="java.math.BigDecimal">
+    <Properties>
+      <CustomProperties>
+        <Property Name="nextSiblingNamespace"
+                  Value="http://xmlns.oracle.com/pcbpel/adapter/db/top/getOrderData"/>
+        <Property Name="nextSibling" Value="headerId"/>
+        <Property Name="minOccurs" Value="0"/>
+        <Property Name="maxOccurs" Value="1"/>
+        <Property Name="LABEL" Value="Org Id"/>
+        <Property Name="LeafElement_hint" Value="LeafElement_no_attribute"/>
+        <Property Name="nillable" Value="true"/>
+        <Property Name="originalName" Value="orgId"/>
+        <Property Name="targetNamespace"
+                  Value="http://xmlns.oracle.com/pcbpel/adapter/db/top/getOrderData"/>
+        <Property Name="type" Value="java.math.BigDecimal"/>
+      </CustomProperties>
+    </Properties>
+  </Attribute>
+  <Attribute Name="headerId" IsUpdateable="0" Type="java.math.BigDecimal">
+    <Properties>
+      <CustomProperties>
+        <Property Name="nextSiblingNamespace"
+                  Value="http://xmlns.oracle.com/pcbpel/adapter/db/top/getOrderData"/>
+        <Property Name="nextSibling" Value="lineNumber"/>
+        <Property Name="minOccurs" Value="0"/>
+        <Property Name="maxOccurs" Value="1"/>
+        <Property Name="LABEL" Value="Header Id"/>
+        <Property Name="LeafElement_hint" Value="LeafElement_no_attribute"/>
+        <Property Name="nillable" Value="false"/>
+        <Property Name="originalName" Value="headerId"/>
+        <Property Name="targetNamespace"
+                  Value="http://xmlns.oracle.com/pcbpel/adapter/db/top/getOrderData"/>
+        <Property Name="type" Value="java.math.BigDecimal"/>
+      </CustomProperties>
+    </Properties>
+  </Attribute>
+  <Attribute Name="lineNumber" IsUpdateable="0" Type="java.math.BigDecimal">
+    <Properties>
+      <CustomProperties>
+        <Property Name="nextSiblingNamespace"
+                  Value="http://xmlns.oracle.com/pcbpel/adapter/db/top/getOrderData"/>
+        <Property Name="nextSibling" Value="orderedItem"/>
+        <Property Name="minOccurs" Value="0"/>
+        <Property Name="maxOccurs" Value="1"/>
+        <Property Name="LABEL" Value="Line Number"/>
+        <Property Name="LeafElement_hint" Value="LeafElement_no_attribute"/>
+        <Property Name="nillable" Value="false"/>
+        <Property Name="originalName" Value="lineNumber"/>
+        <Property Name="targetNamespace"
+                  Value="http://xmlns.oracle.com/pcbpel/adapter/db/top/getOrderData"/>
+        <Property Name="type" Value="java.math.BigDecimal"/>
+      </CustomProperties>
+    </Properties>
+  </Attribute>
+  <Attribute Name="orderedItem" IsUpdateable="0" Type="java.lang.String">
+    <Properties>
+      <CustomProperties>
+        <Property Name="nextSiblingNamespace"
+                  Value="http://xmlns.oracle.com/pcbpel/adapter/db/top/getOrderData"/>
+        <Property Name="maxLength" Value="2000"/>
+        <Property Name="nextSibling" Value="orderQuantityUom"/>
+        <Property Name="minOccurs" Value="0"/>
+        <Property Name="maxOccurs" Value="1"/>
+        <Property Name="LABEL" Value="Ordered Item"/>
+        <Property Name="LeafElement_hint" Value="LeafElement_no_attribute"/>
+        <Property Name="nillable" Value="true"/>
+        <Property Name="originalName" Value="orderedItem"/>
+        <Property Name="targetNamespace"
+                  Value="http://xmlns.oracle.com/pcbpel/adapter/db/top/getOrderData"/>
+        <Property Name="type" Value="java.lang.String"/>
+      </CustomProperties>
+    </Properties>
+  </Attribute>
+  <Attribute Name="orderQuantityUom" IsUpdateable="0" Type="java.lang.String">
+    <Properties>
+      <CustomProperties>
+        <Property Name="nextSiblingNamespace"
+                  Value="http://xmlns.oracle.com/pcbpel/adapter/db/top/getOrderData"/>
+        <Property Name="maxLength" Value="3"/>
+        <Property Name="nextSibling" Value="orderedQuantity"/>
+        <Property Name="minOccurs" Value="0"/>
+        <Property Name="maxOccurs" Value="1"/>
+        <Property Name="LABEL" Value="Order Quantity Uom"/>
+        <Property Name="LeafElement_hint" Value="LeafElement_no_attribute"/>
+        <Property Name="nillable" Value="true"/>
+        <Property Name="originalName" Value="orderQuantityUom"/>
+        <Property Name="targetNamespace"
+                  Value="http://xmlns.oracle.com/pcbpel/adapter/db/top/getOrderData"/>
+        <Property Name="type" Value="java.lang.String"/>
+      </CustomProperties>
+    </Properties>
+  </Attribute>
+  <Attribute Name="orderedQuantity" IsUpdateable="0"
+             Type="java.math.BigDecimal">
+    <Properties>
+      <CustomProperties>
+        <Property Name="minOccurs" Value="0"/>
+        <Property Name="maxOccurs" Value="1"/>
+        <Property Name="LABEL" Value="Ordered Quantity"/>
+        <Property Name="LeafElement_hint" Value="LeafElement_no_attribute"/>
+        <Property Name="nillable" Value="true"/>
+        <Property Name="originalName" Value="orderedQuantity"/>
+        <Property Name="targetNamespace"
+                  Value="http://xmlns.oracle.com/pcbpel/adapter/db/top/getOrderData"/>
+        <Property Name="type" Value="java.math.BigDecimal"/>
+      </CustomProperties>
+    </Properties>
+  </Attribute>
+</JavaBean>

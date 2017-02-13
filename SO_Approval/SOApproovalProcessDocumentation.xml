@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?oracleBPM version="11.1.1.7.0.2.22" fileRevision="20120217"?>
+<processDocumentation xmlns="http://xmlns.oracle.com/bpm/taskMetadataService/processDocumentation">
+    <component name="SOApproovalProcess">
+        <topicDocumentations>
+            <topicDocumentation name="SOApproovalProcess">
+                <descriptions>
+                    <description locale="en">SOApproovalProcess</description>
+                </descriptions>
+            </topicDocumentation>
+            <topicDocumentation name="ACT18442727472493">
+                <labels>
+                    <label locale="en">selectOrderData</label>
+                </labels>
+                <descriptions>
+                    <description locale="en"></description>
+                </descriptions>
+            </topicDocumentation>
+            <topicDocumentation name="ACT18442728231492">
+                <labels>
+                    <label locale="en">SOApproval</label>
+                </labels>
+                <descriptions>
+                    <description locale="en"></description>
+                </descriptions>
+            </topicDocumentation>
+            <topicDocumentation name="ACT18442731034375">
+                <labels>
+                    <label locale="en">updateApprovalStatus</label>
+                </labels>
+                <descriptions>
+                    <description locale="en"></description>
+                </descriptions>
+            </topicDocumentation>
+            <topicDocumentation name="ACT18444562847647">
+                <labels>
+                    <label locale="en">updateApprovalStatus</label>
+                </labels>
+                <descriptions>
+                    <description locale="en"></description>
+                </descriptions>
+            </topicDocumentation>
+            <topicDocumentation name="ACT18452605802944">
+                <labels>
+                    <label locale="en">copyHeader</label>
+                </labels>
+                <descriptions>
+                    <description locale="en"></description>
+                </descriptions>
+            </topicDocumentation>
+            <topicDocumentation name="EVT18437268383886">
+                <labels>
+                    <label locale="en">Start</label>
+                </labels>
+                <descriptions>
+                    <description locale="en"></description>
+                </descriptions>
+            </topicDocumentation>
+            <topicDocumentation name="EVT18437268383867">
+                <labels>
+                    <label locale="en">End</label>
+                </labels>
+                <descriptions>
+                    <description locale="en"></description>
+                </descriptions>
+            </topicDocumentation>
+            <topicDocumentation name="GTW18442730131486">
+                <labels>
+                    <label locale="en">approvalDecision</label>
+                </labels>
+                <descriptions>
+                    <description locale="en"></description>
+                </descriptions>
+            </topicDocumentation>
+            <topicDocumentation name="sf4"/>
+            <topicDocumentation name="sf5"/>
+            <topicDocumentation name="sf6"/>
+            <topicDocumentation name="sf7"/>
+            <topicDocumentation name="sf9">
+                <labels>
+                    <label locale="en">isApproved</label>
+                </labels>
+                <descriptions>
+                    <description locale="en"></description>
+                </descriptions>
+            </topicDocumentation>
+            <topicDocumentation name="sf11"/>
+            <topicDocumentation name="sf13">
+                <labels>
+                    <label locale="en">isRejected</label>
+                </labels>
+                <descriptions>
+                    <description locale="en"></description>
+                </descriptions>
+            </topicDocumentation>
+            <topicDocumentation name="sf16"/>
+            <topicDocumentation name="sf61"/>
+        </topicDocumentations>
+    </component>
+</processDocumentation>

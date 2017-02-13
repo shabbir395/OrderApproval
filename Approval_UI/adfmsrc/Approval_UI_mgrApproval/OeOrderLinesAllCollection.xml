@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<JavaBean xmlns="http://xmlns.oracle.com/adfm/beanmodel" version="11.1.1.64.93"
+          id="OeOrderLinesAllCollection" Package="Approval_UI_mgrApproval"
+          BeanClass="Approval_UI_mgrApproval.OeOrderLinesAllCollection"
+          isJavaBased="false">
+  <AccessorAttribute id="OeOrderLinesAll" IsCollection="true"
+                     BeanClass="Approval_UI_mgrApproval.OeOrderLinesAll"
+                     CollectionBeanClass="Approval_UI_mgrApproval.OeOrderLinesAll_OeOrderLinesAll_Operations">
+    <Properties>
+      <Property Name="minOccurs" Value="0"/>
+      <Property Name="maxOccurs" Value="2147483640"/>
+      <Property Name="LABEL" Value="Oe Order Lines All"/>
+      <Property Name="nillable" Value="false"/>
+      <Property Name="originalName" Value="OeOrderLinesAll"/>
+      <Property Name="targetNamespace"
+                Value="http://xmlns.oracle.com/pcbpel/adapter/db/top/getOrderData"/>
+    </Properties>
+  </AccessorAttribute>
+</JavaBean>

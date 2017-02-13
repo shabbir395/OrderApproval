@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<JavaBean xmlns="http://xmlns.oracle.com/adfm/beanmodel" version="11.1.1.64.93"
+          id="mgrApprovalPayloadType" Package="Approval_UI_mgrApproval"
+          BeanClass="Approval_UI_mgrApproval.mgrApprovalPayloadType"
+          isJavaBased="false">
+  <AccessorAttribute id="OeOrderLinesAllCollection" IsCollection="true"
+                     BeanClass="Approval_UI_mgrApproval.OeOrderLinesAllCollection"
+                     CollectionBeanClass="Approval_UI_mgrApproval.OeOrderLinesAllCollection_OeOrderLinesAllCollection_Operations">
+    <Properties>
+      <Property Name="minOccurs" Value="1"/>
+      <Property Name="maxOccurs" Value="1"/>
+      <Property Name="LABEL" Value="Oe Order Lines All Collection"/>
+      <Property Name="nillable" Value="false"/>
+      <Property Name="originalName" Value="OeOrderLinesAllCollection"/>
+      <Property Name="targetNamespace"
+                Value="http://xmlns.oracle.com/pcbpel/adapter/db/top/getOrderData"/>
+    </Properties>
+  </AccessorAttribute>
+</JavaBean>

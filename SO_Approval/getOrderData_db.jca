@@ -1,0 +1,14 @@
+<adapter-config name="getOrderData" adapter="Database Adapter" wsdlLocation="getOrderData.wsdl" xmlns="http://platform.integration.oracle/blocks/adapter/fw/metadata">
+  
+  <connection-factory location="eis/DB/erptest6" UIConnectionName="erptest6" adapterRef=""/>
+  <endpoint-interaction portType="getOrderData_ptt" operation="getOrderDataSelect">
+    <interaction-spec className="oracle.tip.adapter.db.DBReadInteractionSpec">
+      <property name="DescriptorName" value="getOrderData.OeOrderLinesAll"/>
+      <property name="QueryName" value="getOrderDataSelect"/>
+      <property name="MappingsMetaDataURL" value="getOrderData-or-mappings.xml"/>
+      <property name="ReturnSingleResultSet" value="false"/>
+      <property name="GetActiveUnitOfWork" value="false"/>
+    </interaction-spec>
+  </endpoint-interaction>
+
+</adapter-config>

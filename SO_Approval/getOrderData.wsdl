@@ -1,0 +1,25 @@
+<?binding.jca getOrderData_db.jca?>
+<wsdl:definitions name="getOrderData" targetNamespace="http://xmlns.oracle.com/pcbpel/adapter/db/Order_Approval/SO_Approval/getOrderData" xmlns:tns="http://xmlns.oracle.com/pcbpel/adapter/db/Order_Approval/SO_Approval/getOrderData" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:plt="http://schemas.xmlsoap.org/ws/2003/05/partner-link/" xmlns:top="http://xmlns.oracle.com/pcbpel/adapter/db/top/getOrderData">
+    <plt:partnerLinkType name="getOrderData_plt">
+        <plt:role name="getOrderData_role">
+            <plt:portType name="tns:getOrderData_ptt"/>
+        </plt:role>
+    </plt:partnerLinkType>
+    <wsdl:types>
+        <schema xmlns="http://www.w3.org/2001/XMLSchema">
+            <import namespace="http://xmlns.oracle.com/pcbpel/adapter/db/top/getOrderData" schemaLocation="xsd/getOrderData_table.xsd"/>
+        </schema>
+    </wsdl:types>
+    <wsdl:message name="getOrderDataSelect_inputParameters">
+        <wsdl:part name="getOrderDataSelect_inputParameters" element="top:getOrderDataSelect_headerFilterInputParameters"/>
+    </wsdl:message>
+    <wsdl:message name="OeOrderLinesAllCollection_msg">
+        <wsdl:part name="OeOrderLinesAllCollection" element="top:OeOrderLinesAllCollection"/>
+    </wsdl:message>
+    <wsdl:portType name="getOrderData_ptt">
+        <wsdl:operation name="getOrderDataSelect">
+            <wsdl:input message="tns:getOrderDataSelect_inputParameters"/>
+            <wsdl:output message="tns:OeOrderLinesAllCollection_msg"/>
+        </wsdl:operation>
+    </wsdl:portType>
+</wsdl:definitions>
